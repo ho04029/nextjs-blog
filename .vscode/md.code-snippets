@@ -1,0 +1,7 @@
+{
+  "Post Matter": {
+    "prefix": "blog",
+    "body": ["---", "title: ", "description: ", "date: ", "---"],
+    "description": "mdx 템플릿"
+  }
+}
