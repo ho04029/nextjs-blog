@@ -6,7 +6,7 @@ import { ReactNode } from "react"
 
 type Props = {
   children: ReactNode
-  customMeta: {
+  customMeta?: {
     title: string
     description: string
     date: string
@@ -31,16 +31,6 @@ const Container = (props: Props) => {
         className={`w-full max-w-3xl flex flex-row justify-between items-center my-1`}
       >
         <div className={`flex flex-row items-center`}>
-          <div className={`relative h-10 w-10`}>
-            <Image
-              src={`/favicon.ico`}
-              alt="로고"
-              fill
-              sizes="100vh 100vw"
-              className={`rounded-full`}
-            />
-          </div>
-
           <span className={`mx-2 font-extralight text-lg`}>
             {metadata.title}
           </span>
